@@ -21,7 +21,7 @@ class Connection {
     async connectToDb() {
         try {
             await mongoose.connect(this.url);
-            console.log("Connected to MongoDB");
+            console.log("Connected to MongoDB " + this.url);
         } catch (error) {
             console.error("Failed to connect to MongoDB:", error);
             throw error;

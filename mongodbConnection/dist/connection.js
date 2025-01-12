@@ -25,7 +25,7 @@ class Connection {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 yield mongoose_1.default.connect(this.url);
-                console.log("Connected to MongoDB");
+                console.log("Connected to MongoDB " + this.url);
             }
             catch (error) {
                 console.error("Failed to connect to MongoDB:", error);
